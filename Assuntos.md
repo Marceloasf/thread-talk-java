@@ -49,3 +49,13 @@ A habilidade de uma aplicação executar em tempo hábil é conhecida como **Liv
 - Deadlock: Acontece quando duas ou mais threads ficam bloqueadas para sempre, uma esperando a outra para continuar.
 - Starvation: Ocorre quando uma única thread tem o acesso a um recurso ou lock constamente negado. 
 - Livelock: Ocorre quando duas ou mais threads estão "bloqueadas para sempre", mesmo continuando ativas e tentando completar a tarefa. Muitas vezes ocorre quando duas threads estão tentando resolver um deadlock. 
+
+### Race Condition
+
+Race condition é um resultado indesejado que ocorre quando duas tarefas, que deveriam ser completadas sequencialmente, são completadas ao mesmo tempo.
+
+Um caso que podemos usar de exemplo seria de dois usuários criando contas com o mesmo username. Nesse caso podemos ter três resultados:
+
+- Ambos conseguem criar a conta com o mesmo username.
+- Ambos não conseguem criar a conta com o mesmo username.
+- Apenas um dos dois consegue criar a conta com o username.
